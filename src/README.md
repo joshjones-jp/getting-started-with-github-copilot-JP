@@ -1,50 +1,50 @@
-# Mergington High School Activities API
+# Mergington高校 課外活動API
 
-A super simple FastAPI application that allows students to view and sign up for extracurricular activities.
+学生が課外活動を閲覧し、登録できる非常にシンプルなFastAPIアプリケーションです。
 
-## Features
+## 機能
 
-- View all available extracurricular activities
-- Sign up for activities
+- 利用可能なすべての課外活動を閲覧する
+- 活動に登録する
 
-## Getting Started
+## はじめに
 
-1. Install the dependencies:
+1. 依存関係をインストールする：
 
    ```
    pip install fastapi uvicorn
    ```
 
-2. Run the application:
+2. アプリケーションを実行する：
 
    ```
    python app.py
    ```
 
-3. Open your browser and go to:
-   - API documentation: http://localhost:8000/docs
-   - Alternative documentation: http://localhost:8000/redoc
+3. ブラウザを開き、以下のURLにアクセスする：
+   - APIドキュメント: http://localhost:8000/docs
+   - 代替ドキュメント: http://localhost:8000/redoc
 
-## API Endpoints
+## APIエンドポイント
 
-| Method | Endpoint                                                          | Description                                                         |
+| メソッド | エンドポイント                                                    | 説明                                                         |
 | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
-| GET    | `/activities`                                                     | Get all activities with their details and current participant count |
-| POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Sign up for an activity                                             |
+| GET    | `/activities`                                                     | すべての活動の詳細と現在の参加者数を取得する |
+| POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | 活動に登録する                                             |
 
-## Data Model
+## データモデル
 
-The application uses a simple data model with meaningful identifiers:
+アプリケーションは意味のある識別子を使用するシンプルなデータモデルを使用しています：
 
-1. **Activities** - Uses activity name as identifier:
+1. **活動 (Activities)** - 活動名を識別子として使用：
 
-   - Description
-   - Schedule
-   - Maximum number of participants allowed
-   - List of student emails who are signed up
+   - 説明
+   - スケジュール
+   - 最大参加者数
+   - 登録済み学生のメールアドレスリスト
 
-2. **Students** - Uses email as identifier:
-   - Name
-   - Grade level
+2. **学生 (Students)** - メールアドレスを識別子として使用：
+   - 名前
+   - 学年
 
-All data is stored in memory, which means data will be reset when the server restarts.
+すべてのデータはメモリ上に保存されるため、サーバーを再起動するとデータはリセットされます。

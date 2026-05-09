@@ -1,47 +1,47 @@
-# Getting Started with GitHub Copilot
+# GitHub Copilot 入門
 
-_Get started using GitHub Copilot in less than an hour._
+_1時間以内にGitHub Copilotを使い始めましょう。_
 
-## Welcome
+## ようこそ
 
-- **Who is this for**: Developers at any experience level looking to accelerate their code workflow.
-- **What you'll learn**: The different ways to interact with Copilot to explain, write, plan, and develop code.
-- **What you'll build**: You will guide Copilot to update Mergington High School's extracurricular activities website.
-- **Prerequisites**:
-  - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
-  - Familiarity with [VS Code](https://code.visualstudio.com/)
-  - Basic coding principles
-- **How long**: This exercise takes less than one hour to complete.
+- **対象者**: コードワークフローを加速させたい、あらゆる経験レベルの開発者
+- **学習内容**: コードの説明、作成、計画、開発のためにCopilotと対話するさまざまな方法
+- **作成するもの**: Mergington高校の課外活動ウェブサイトを更新するようCopilotをガイドします
+- **前提条件**:
+  - Skillsエクササイズ: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
+  - [VS Code](https://code.visualstudio.com/)の基本的な知識
+  - 基本的なコーディングの原則
+- **所要時間**: このエクササイズは1時間以内で完了できます
 
-In this exercise, you will:
+このエクササイズでは、以下のことを行います：
 
-1. Use a preconfigured Codespace to run VS Code in your browser.
-1. Learn different interaction options to develop and plan with GitHub Copilot.
-1. Use Copilot to summarize and review your pull request.
+1. 事前設定済みのCodespaceを使用して、ブラウザでVS Codeを実行する
+1. GitHub Copilotで開発・計画するさまざまな対話オプションを学ぶ
+1. Copilotを使ってpull requestを要約・レビューする
 
-### How to start this exercise
+### エクササイズの始め方
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+エクササイズをあなたのアカウントにコピーするだけです。その後、お気に入りのOctocat（Mona）が最初のレッスンを準備するのに**約20秒**かかりますので、**ページを更新**してください。
 
 [![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=getting-started-with-github-copilot&owner=%40me&name=skills-getting-started-with-github-copilot&description=Exercise:+Get+started+using+GitHub+Copilot&visibility=public)
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>うまくいかない場合は？ 🤷</summary><br/>
 
-When copying the exercise, we recommend the following settings:
+エクササイズをコピーする際は、以下の設定を推奨します：
 
-- For owner, choose your personal account or an organization to host the repository.
+- オーナーには、リポジトリをホストする個人アカウントまたは組織を選択してください。
 
-- We recommend creating a public repository, since private repositories will use Actions minutes.
+- プライベートリポジトリはActionsの利用時間を消費するため、パブリックリポジトリの作成を推奨します。
    
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
+エクササイズが20秒で準備できない場合は、[Actions](../../actions)タブを確認してください。
 
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
+- ジョブが実行中かどうか確認してください。時間がかかる場合があります。
 
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
+- ページが失敗したジョブを表示している場合は、Issueを送信してください。バグを見つけましたね！🐛
 
 </details>
 
 ---
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2025 GitHub &bull; [行動規範](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MITライセンス](https://gh.io/mit)

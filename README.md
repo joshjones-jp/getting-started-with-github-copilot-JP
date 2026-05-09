@@ -21,7 +21,7 @@ _1時間以内にGitHub Copilotを使い始めましょう。_
 
 ### エクササイズの始め方
 
-エクササイズをあなたのアカウントにコピーするだけです。その後、お気に入りのOctocat（Mona）が最初のレッスンを準備するのに**約20秒**かかります[...]
+エクササイズをあなたのアカウントにコピーするだけです。その後、お気に入りのOctocat（Mona）が最初のレッスンを準備するのに**約20秒**かかります
 
 [![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=joshjones-jp&template_name=getting-started-with-github-copilot-JP&&owner=%40me&name=skills-getting-started-with-github-copilot&description=Exercise:+Get+started+using+GitHub+Copilot&visibility=public)
 

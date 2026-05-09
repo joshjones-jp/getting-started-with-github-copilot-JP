@@ -1,22 +1,22 @@
-## Review
+## レビュー
 
-_Congratulations, you've completed this exercise and learned a lot about GitHub Copilot!_
+_おめでとうございます、このエクササイズを完了し、GitHub Copilotについて多くを学びました！_
 
 <img src="https://octodex.github.com/images/jetpacktocat.png" alt=celebrate width=200 align=right>
 
-Here's a recap of the GitHub Copilot features you learned:
+学んだGitHub Copilotの機能のまとめ：
 
-- **Ask Mode**: Explored your codebase with Copilot
-- **Inline suggestions**: Completed code with Tab acceptance
-- **Inline Chat**: Generated code and data with Ctrl/Cmd + I
-- **Agent Mode**: Built features autonomously
-- **Plan Agent**: Drafted a plan, answered questions, and started implementation
-- **GitHub integration**: Generated commit messages, PR summaries, and code reviews
+- **Askモード**: Copilotを使ってコードベースを探索した
+- **インラインサジェスト**: Tabキーでコードを補完した
+- **インラインチャット**: Ctrl/Cmd + Iでコードとデータを生成した
+- **Agentモード**: 自律的に機能を構築した
+- **Plan Agent**: 計画を作成し、質問に答えて実装を開始した
+- **GitHub統合**: コミットメッセージ、PRサマリー、コードレビューを生成した
 
-### What's next?
+### 次のステップ
 
-- Check out the other [GitHub Skills exercises](https://learn.github.com/skills).
-  - Learn how to [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) to give Copilot extra capabilities!
-  - Tailor Copilot to your project needs in [Customize your GitHub Copilot Experience](https://github.com/skills/customize-your-github-copilot-experience)
-  - Tackle legacy COBOL code in [Modernize Your Legacy Code with GitHub Copilot](https://github.com/skills/modernize-your-legacy-code-with-github-copilot) exercise
-  - Try GitHub Copilot Coding Agent in the [Expand your team with Copilot](https://github.com/skills/expand-your-team-with-copilot) exercise
+- 他の[GitHub Skillsエクササイズ](https://learn.github.com/skills)をチェックしてください。
+  - Copilotに追加機能を与える[MCPとCopilotの統合](https://github.com/skills/integrate-mcp-with-copilot)を学ぶ！
+  - [GitHub Copilotエクスペリエンスのカスタマイズ](https://github.com/skills/customize-your-github-copilot-experience)でCopilotをプロジェクトのニーズに合わせる
+  - [GitHub Copilotでレガシーコードをモダナイズ](https://github.com/skills/modernize-your-legacy-code-with-github-copilot)エクササイズでレガシーCOBOLコードに取り組む
+  - [Copilotでチームを拡大](https://github.com/skills/expand-your-team-with-copilot)エクササイズでGitHub Copilot Coding Agentを試す

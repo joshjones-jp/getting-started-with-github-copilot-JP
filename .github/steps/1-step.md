@@ -1,67 +1,67 @@
-## Step 1: Hello Copilot
+## ステップ1: Copilotとの最初の一歩
 
-Welcome to your **"Getting Started with GitHub Copilot"** exercise! :robot:
+**「GitHub Copilot 入門」** エクササイズへようこそ！ :robot:
 
-In this exercise, you will be using different GitHub Copilot features to work on a website that allows students of Mergington High School to sign up for extracurricular activities. 🎻 ⚽️ ♟️
+このエクササイズでは、Mergington高校の生徒が課外活動に登録できるウェブサイトを作業するために、さまざまなGitHub Copilotの機能を使用します。 🎻 ⚽️ ♟️
 
-<img width="600" alt="screenshot of Mergington High School WebApp" src="../images/mergington-high-school-webapp.png" />
+<img width="600" alt="Mergington High School WebAppのスクリーンショット" src="../images/mergington-high-school-webapp.png" />
 
-### 📖 Theory: Getting to know GitHub Copilot
+### 📖 理論: GitHub Copilotについて知ろう
 
-<img width="150" align="right" alt="copilot logo" src="../images/copilot-logo.png" />
+<img width="150" align="right" alt="Copilotロゴ" src="../images/copilot-logo.png" />
 
-GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration.
+GitHub Copilotは、AIコーディングアシスタントであり、より少ない労力でコードを速く書けるようにサポートします。これにより、問題解決とコラボレーションにより多くのエネルギーを注げます。
 
-GitHub Copilot has been proven to increase developer productivity and accelerate the pace of software development. For more information, see [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness in the GitHub blog.](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+GitHub Copilotは開発者の生産性を向上させ、ソフトウェア開発のペースを加速することが証明されています。詳細については、[Research: quantifying GitHub Copilot's impact on developer productivity and happiness (GitHubブログ)](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)をご覧ください。
 
-As you work in your IDE, you'll most often interact with GitHub Copilot in the following ways:
+IDEで作業する際、GitHub Copilotと最もよく対話する方法は次のとおりです：
 
-| Interaction Mode          | 📝 Description                                                                                                                 | 🎯 Best For                                                                                                     |
+| 対話モード                | 📝 説明                                                                                                                 | 🎯 最適な用途                                                                                                     |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| **⚡ Inline suggestions** | AI-powered code suggestions that appear as you type, offering context-aware completions from single lines to entire functions. | Completion of the current line, sometimes a whole new block of code                                             |
-| **💭 Inline Chat**        | Interactive chat scoped to your current file or selection. Ask questions about specific code blocks.                           | Code explanations, debugging specific functions, targeted improvements                                          |
-| **💬 Ask Mode**           | Optimized for answering questions about your codebase, coding, and general technology concepts.                                | Understanding how code works, brainstorming ideas, asking questions                                             |
-| **🤖 Agent Mode**         | Recommended default mode for most coding tasks: autonomous edits, tool use, and follow-through until the task is done.         | Daily coding tasks, from scoped fixes to larger multi-file implementation work                                   |
-| **🧭 Plan Agent**         | Optimized for drafting a plan and asking clarifying questions before any code changes are made.                                | When you want a reviewed plan first, then hand off to implementation                                            |
+| **⚡ インラインサジェスト** | 入力中にAIによるコード提案が表示され、1行から関数全体まで文脈に応じた補完を提供します。 | 現在の行の補完、場合によってはコードブロック全体                                             |
+| **💭 インラインチャット**        | 現在のファイルや選択範囲に限定されたインタラクティブなチャット。特定のコードブロックについて質問できます。                           | コードの説明、特定の関数のデバッグ、的を絞った改善                                          |
+| **💬 Askモード**           | コードベース、コーディング、一般的な技術概念に関する質問への回答に最適化されています。                                | コードの動作理解、アイデアのブレインストーミング、質問する                                             |
+| **🤖 Agentモード**         | ほとんどのコーディングタスクに推奨されるデフォルトモード：自律的な編集、ツール使用、タスク完了まで自動的に進めます。         | 日々のコーディングタスク、スコープを絞った修正から大規模なマルチファイル実装まで                                   |
+| **🧭 Plan Agent**         | コード変更を行う前に計画を立案し、明確化の質問をすることに最適化されています。                                | レビュー済みの計画を先に作成したい場合に、実装に引き継ぐ                                            |
 
-As you work, you'll find GitHub Copilot can help out in several places across the `github.com` website and in your favorite coding environments such as VS Code, Jet Brains, and Xcode!
+作業する中で、GitHub Copilotは `github.com` ウェブサイト全体や、VS Code、JetBrains、Xcodeなどのお気に入りのコーディング環境でも活躍することがわかるでしょう！
 
-For today's coding though, we will practice with VS Code in a pre-configured development environment known as a [GitHub Codespace](https://github.com/features/codespaces).
+今日のコーディングでは、[GitHub Codespace](https://github.com/features/codespaces)として知られる事前設定済みの開発環境でVS Codeを使って練習します。
 
 > [!TIP]
-> You can learn more about current and upcoming features in the [GitHub Copilot Features](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features) documentation.
+> 現在および今後の機能については、[GitHub Copilotの機能](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features)ドキュメントで詳しく学べます。
 
-### :keyboard: Activity: Get a project intro from Copilot Chat
+### :keyboard: アクティビティ: Copilot Chatからプロジェクトの紹介を受ける
 
-Let's start up our development environment, use copilot to learn a bit about the project, and then give it a test run.
+開発環境を立ち上げ、Copilotを使ってプロジェクトについて学び、テスト実行してみましょう。
 
-1. Use the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
+1. 以下のボタンを使って新しいタブで **Codespace作成**ページを開きます。デフォルト設定を使用してください。
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
-1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
-   - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills/getting-started-with-github-copilot`
+1. **Repository**フィールドがオリジナルではなく、あなたのエクササイズのコピーであることを確認してから、緑色の**Codespaceを作成**ボタンをクリックします。
+   - ✅ あなたのコピー: `/{{full_repo_name}}`
+   - ❌ オリジナル: `/skills/getting-started-with-github-copilot`
 
-1. Wait a moment for Visual Studio Code to load in your browser.
+1. Visual Studio Codeがブラウザに読み込まれるまで少し待ちます。
 
-1. In the left sidebar, click the extensions tab and verify that the `GitHub Copilot` and `Python` extensions are installed and enabled.
+1. 左サイドバーで、拡張機能タブをクリックして、`GitHub Copilot`と`Python`の拡張機能がインストールされて有効になっていることを確認します。
 
-   <img width="350" alt="copilot extension for VS Code" src="../images/copilot-extension-vscode.png" />
+   <img width="350" alt="VS Code用GitHub Copilot拡張機能" src="../images/copilot-extension-vscode.png" />
 
-   <img width="350" alt="python extension for VS Code" src="../images/python-extension-vscode.png" />
+   <img width="350" alt="VS Code用Python拡張機能" src="../images/python-extension-vscode.png" />
 
-1. At the top of VS Code, locate and click the **Toggle Chat icon** to open a Copilot Chat side panel.
+1. VS Codeの上部で、**チャット切り替えアイコン**を見つけてクリックし、Copilot Chatのサイドパネルを開きます。
 
    <img width="150" alt="image" src="../images/toggle-chat-icon.png" />
 
-   > 🪧 **Note:** If this is your first time using GitHub Copilot, you will need to accept the usage terms to continue.
+   > 🪧 **注意:** GitHub Copilotを初めて使用する場合、続けるには利用規約に同意する必要があります。
 
-1. Make sure you are in **Ask Mode** for our first interaction
+1. 最初の対話のために**Askモード**になっていることを確認します
 
-   <img width="350" alt="screenshot showing Ask Mode selection in Copilot Chat" src="../images/ask-mode-selection.png" />
+   <img width="350" alt="Copilot ChatでAskモードを選択したスクリーンショット" src="../images/ask-mode-selection.png" />
 
-1. Enter the below prompt to ask Copilot to introduce you to the project.
+1. 以下のプロンプトを入力して、Copilotにプロジェクトを紹介してもらいます。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -70,29 +70,29 @@ Let's start up our development environment, use copilot to learn a bit about the
    > What should I do to run it?
    > ```
 
-   > 🪧 **Note:** It is not necessary to follow Copilot's recommended instructions. We have already prepared the environment for you.
+   > 🪧 **注意:** Copilotの推奨手順に従う必要はありません。すでに環境を準備してあります。
 
-1. Now that we know a bit more about the project, let's actually try running it! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
+1. プロジェクトについて少し知ったところで、実際に実行してみましょう！左サイドバーで`実行とデバッグ`タブを選択し、**デバッグ開始**アイコンを押します。
 
    <img width="300" alt="image" src="../images/run-and-debug-tab.png" />
 
-1. We want to see our webpage running in a browser, so let's find the url and port. If it isn't visible, expand the lower panel and select the **Ports** tab.
+1. ブラウザでウェブページが実行されるのを確認したいので、URLとポートを見つけましょう。表示されていない場合は、下部のパネルを展開して**ポート**タブを選択します。
 
-1. In the list, find port `8000` and the related link. Hover over the link and select the **Open in browser** icon.
+1. リストの中からポート`8000`と関連するリンクを見つけます。リンクにホバーして**ブラウザで開く**アイコンを選択します。
 
    ![image](../images/open-in-browser-icon.png)
 
-### :keyboard: Activity: Use Copilot to help remember a terminal command 🙋
+### :keyboard: アクティビティ: ターミナルコマンドを思い出すためにCopilotを使う 🙋
 
-Great work! Now that we are familiar with the app and we know it works, let's ask copilot for help starting a branch so we can do some customizing.
+よくできました！アプリを確認して動作することがわかったので、ブランチを作成してカスタマイズを始めるためにCopilotに助けを求めましょう。
 
-1. In VS Code's bottom panel, select the **Terminal** tab and on the right side click the plus `+` sign to create a new terminal window.
+1. VS Codeの下部パネルで、**ターミナル**タブを選択し、右側のプラス`+`記号をクリックして新しいターミナルウィンドウを作成します。
 
-   > 🪧 **Note:** This will avoid stopping the existing debug session that is hosting our web application service.
+   > 🪧 **注意:** これにより、ウェブアプリサービスをホストしている既存のデバッグセッションを停止せずに済みます。
 
-1. Within the new terminal window use the keyboard shortcut `Ctrl + I` (windows) or `Cmd + I` (mac) to bring up **Copilot's Terminal Inline Chat**.
+1. 新しいターミナルウィンドウ内で、キーボードショートカット`Ctrl + I`（Windows）または`Cmd + I`（Mac）を使って**CopilotのTerminal Inline Chat**を呼び出します。
 
-1. Let's ask Copilot to help us remember a command we have forgotten: creating a branch and publishing it.
+1. 忘れてしまったコマンド（ブランチを作成して公開すること）をCopilotに手伝ってもらいましょう：
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -100,20 +100,20 @@ Great work! Now that we are familiar with the app and we know it works, let's as
    > Hey copilot, how can I create and publish a new Git branch called "accelerate-with-copilot"?
    > ```
 
-   > 💡 **Tip:** If Copilot doesn't give you quite what you want, you can always continue explaining what you need. Copilot will remember the conversation history for follow-up responses.
+   > 💡 **ヒント:** Copilotが望む結果を返さない場合は、必要なことを説明し続けることができます。Copilotはフォローアップの返答のために会話履歴を覚えています。
 
-1. Press the `Run` button to let Copilot insert the terminal command for us. No need to copy and paste!
+1. Copilotがターミナルコマンドを入力してくれるよう、`実行`ボタンを押します。コピー＆ペーストは不要です！
 
-1. After a moment, look in the VS Code lower status bar, on the left, to see the active branch. It should now say `accelerate-with-copilot`. If so, you are all done with this step!
+1. しばらくしたら、VS Codeの下部ステータスバーの左側を見て、アクティブなブランチを確認します。`accelerate-with-copilot`と表示されているはずです。そうであれば、このステップは完了です！
 
-1. Now that your branch is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+1. ブランチがGitHubにプッシュされたので、Monaがあなたの作業を確認中のはずです。少し待って、コメントを確認してください。進捗情報と次のレッスンが表示されます。
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>うまくいかない場合は？ 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
+フィードバックが得られない場合は、以下の点を確認してください：
 
-- Make sure your created the branch with the exact name `accelerate-with-copilot`. No prefixes or suffixes.
-- Make sure the branch was indeed published to your repository.
+- ブランチが正確に`accelerate-with-copilot`という名前で作成されていることを確認してください。プレフィックスやサフィックスは不要です。
+- ブランチがリポジトリに公開されていることを確認してください。
 
 </details>

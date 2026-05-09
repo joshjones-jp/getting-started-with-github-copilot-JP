@@ -1,30 +1,30 @@
-## Step 2: Getting work done with Copilot
+## ステップ2: Copilotと一緒に仕事を進める
 
-In the previous step, GitHub Copilot was able to help us onboard to the project. That alone is a huge time saver, but now let's get some work done!
+前のステップでは、GitHub Copilotがプロジェクトへのオンボーディングを助けてくれました。それだけでも大きな時間の節約になりますが、今度は実際に仕事を進めましょう！
 
-:bug: **THERE IS A BUG ON THE WEBSITE** :bug:
+:bug: **ウェブサイトにバグがあります** :bug:
 
-We’ve discovered that something’s off in the signup flow.
-Students can currently register for the same activity **more than once**! Let’s see how far Copilot can take us in uncovering the cause and shaping a clean fix.
+登録フローに問題があることが発覚しました。
+現在、学生が同じ活動に**複数回**登録できてしまいます！Copilotがどこまで原因の特定と修正に力を貸してくれるか見てみましょう。
 
-Before we dive in, a quick primer on how Copilot works. 🧑‍🚀
+本題に入る前に、Copilotの仕組みについて簡単に説明します。 🧑‍🚀
 
-### 📖 Theory: How Copilot works
+### 📖 理論: Copilotの仕組み
 
-In short, you can think of Copilot like a very specialized coworker. To be effective with them, you need to provide them background (context) and clear direction (prompts). Additionally, different people are better at different things because of their unique experiences (models).
+簡単に言うと、Copilotは非常に専門化されたチームメンバーのようなものです。効果的に活用するには、背景情報（コンテキスト）と明確な指示（プロンプト）を提供する必要があります。また、異なる経験（モデル）を持つ人は異なることに長けています。
 
-- **How do we provide context?:** In our coding environment, Copilot will automatically consider nearby code and open tabs. If you are using chat, you can also explicitly refer to files.
+- **コンテキストの提供方法は？:** コーディング環境では、Copilotは近くのコードや開いているタブを自動的に考慮します。チャットを使用している場合は、ファイルを明示的に参照することもできます。
 
-- **What model should we pick?:** For our exercise, it shouldn't matter too much. Experimenting with different models is part of the fun! That's another lesson! 🤖
+- **どのモデルを選ぶべきか？:** このエクササイズでは、あまり重要ではありません。異なるモデルを試すことも楽しみの一つです！それはまた別のレッスンで！ 🤖
 
-- **How do I make prompts?:** Being explicit and clear helps Copilot do the best job. But unlike some traditional systems, you can always clarify your direction with followup prompts.
+- **プロンプトの作り方は？:** 明確かつ具体的にすることで、Copilotが最善の仕事をできます。ただし、従来のシステムとは異なり、フォローアッププロンプトで方向性を明確にすることもできます。
 
 > [!TIP]
-> There several other ways to supplement Copilot's knowledge and capabilities like [chat participants](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants), [chat variables](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables), [slash commands](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1), and [MCP tools](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+> [チャット参加者](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants)、[チャット変数](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables)、[スラッシュコマンド](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1)、[MCPツール](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)など、Copilotの知識と機能を補完する他の方法もいくつかあります。
 
-### :keyboard: Activity: Use Copilot to fix our registration bug :bug:
+### :keyboard: アクティビティ: Copilotを使って登録バグを修正する :bug:
 
-1. Let's ask Copilot to suggest where our bug might be coming from. Open the **Copilot Chat** panel in **Ask mode** and ask the following.
+1. Copilotにバグの原因を提案してもらいましょう。**Copilot Chat**パネルを**Askモード**で開き、以下のプロンプトを入力します。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -33,31 +33,31 @@ In short, you can think of Copilot like a very specialized coworker. To be effec
    > Where could this bug be coming from?
    > ```
 
-1. Now that we know the issue is in the `src/app.py` file and the `signup_for_activity` method, let's follow Copilot's recommendation and go fix it (semi-manually). We'll start with a comment and let Copilot finish the correction.
-   1. Open the `src/app.py` file.
+1. 問題が`src/app.py`ファイルの`signup_for_activity`メソッドにあることがわかったので、Copilotの推奨に従って修正しましょう（半手動で）。コメントから始めて、Copilotに修正を完成させてもらいます。
+   1. `src/app.py`ファイルを開きます。
 
-      > 💡 **Tip:** If Copilot mentioned `src/app.py` in chat, you can click the file directly in the chat view to open it.
+      > 💡 **ヒント:** Copilotがチャットで`src/app.py`に言及した場合、チャットビューでそのファイルを直接クリックして開くことができます。
 
-   1. Near the bottom of the file, find the `signup_for_activity` function.
+   1. ファイルの下部近くで`signup_for_activity`関数を見つけます。
 
-   1. Find the comment line that describes adding a student. Above this is where it seems logical to do our registration check.
+   1. 学生を追加することを説明するコメント行を見つけます。その上が登録チェックを行うのに適切な場所です。
 
-   1. Enter the below comment and press enter to go to the next line. After a moment, temporary shadow text will appear with a suggestion from Copilot! Nice! :tada:
+   1. 以下のコメントを入力してEnterキーを押して次の行に移動します。しばらくすると、Copilotからのサジェストがシャドーテキストとして表示されます！素晴らしい！ :tada:
 
-      Comment:
+      コメント：
 
       ```python
       # Validate student is not already signed up
       ```
 
-      <img width="700" alt="Copilot shadow text suggestion in the editor" src="../images/shadow-text.gif" />
+      <img width="700" alt="エディタでのCopilotシャドーテキストサジェスト" src="../images/shadow-text.gif" />
 
-   1. Press `Tab` to accept Copilot's suggestion and convert the shadow text to code.
+   1. `Tab`キーを押してCopilotのサジェストを承認し、シャドーテキストをコードに変換します。
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>結果の例</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example of a valid suggestion result we produced during the making of this exercise. You can use it to continue forward.
+   Copilotは日々進化しており、常に同じ結果を生成するとは限りません。サジェストに満足できない場合は、このエクササイズの作成中に生成した有効なサジェスト結果の例を示します。これを使って先に進むことができます。
 
    ```python
    @app.post("/activities/{activity_name}/signup")
@@ -81,24 +81,24 @@ In short, you can think of Copilot like a very specialized coworker. To be effec
 
    </details>
 
-### :keyboard: Activity: Let Copilot generate sample data 📋
+### :keyboard: アクティビティ: Copilotにサンプルデータを生成させる 📋
 
-In new project developments, it's often helpful to have some realistic looking fake data for testing. Copilot is excellent at this task, so let's add some more sample activities and introduce another way to interact with Copilot using **Inline Chat**
+新しいプロジェクト開発では、テスト用にリアルに見えるフェイクデータがあると役立つことがよくあります。Copilotはこのタスクが得意なので、さらにサンプル活動を追加して、**インラインチャット**を使ってCopilotと別の方法で対話してみましょう。
 
-**Inline Chat** and the **Copilot Chat** panel are similar, but differ in scope: Copilot Chat handles broader, multi-file or exploratory questions; Inline Chat is faster when you want targeted help on the exact line or block in front of you.
+**インラインチャット**と**Copilot Chat**パネルは似ていますが、スコープが異なります：Copilot Chatは広範なマルチファイルや調査的な質問を処理し、インラインチャットは目の前の特定の行やブロックに対して素早いサポートが必要なときに便利です。
 
-1. Near the top of the `src/app.py` file (about line 23), find the `activities` variable, where our example extracurricular activities are configured.
+1. `src/app.py`ファイルの上部近く（約23行目）で、サンプルの課外活動が設定されている`activities`変数を見つけます。
 
-1. Highlight the entire `activities` dictionary by clicking and dragging your mouse from the top to the bottom of the dictionary. This will help provide context to Copilot for our next prompt.
+1. 辞書の先頭から末尾までマウスでクリック＆ドラッグして、`activities`辞書全体を選択します。これにより、次のプロンプトのためのコンテキストをCopilotに提供します。
 
-   <img width="700" alt="Highlighted activities dictionary before opening inline chat" src="../images/activities-dict-highlighted.png" />
+   <img width="700" alt="インラインチャットを開く前にハイライトされたactivities辞書" src="../images/activities-dict-highlighted.png" />
 
 
-1. Bring up Copilot inline chat by using the keyboard command `Ctrl + I` (windows) or `Cmd + I` (mac).
+1. キーボードコマンド`Ctrl + I`（Windows）または`Cmd + I`（Mac）を使ってCopilotのインラインチャットを呼び出します。
 
-   > 💡 **Tip:** Another way to bring up Copilot inline chat is: `right click` on any of the selected lines -> `Open Inline Chat`.
+   > 💡 **ヒント:** Copilotのインラインチャットを呼び出す別の方法は：選択した行のどれかを`右クリック` -> `インラインチャットを開く`です。
 
-1. Enter the following prompt text and press enter or the **Send** button on the right.
+1. 以下のプロンプトテキストを入力してEnterキーを押すか、右側の**送信**ボタンを押します。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -107,12 +107,12 @@ In new project developments, it's often helpful to have some realistic looking f
    > activities, and 2 more intellectual activities.
    > ```
 
-1. After a moment, Copilot will directly start making changes to the code. The changes will be stylized differently to make any additions and removals easy to identify. Take a moment to inspect and verify the changes, and then press the **Keep** button.
+1. しばらくすると、Copilotがコードに直接変更を加え始めます。変更は追加と削除を識別しやすくするために異なるスタイルで表示されます。変更を確認してから**Keep**ボタンを押します。
 
    <details>
-   <summary>Example Results</summary><br/>
+   <summary>結果の例</summary><br/>
 
-   Copilot is growing every day and may not always produce the same results. If you are unhappy with the suggestions, here is an example result we produced during the making of this exercise. You can use it to continue forward, if having trouble.
+   Copilotは日々進化しており、常に同じ結果を生成するとは限りません。サジェストに満足できない場合は、このエクササイズの作成中に生成した結果の例を示します。問題がある場合はこれを使って先に進むことができます。
 
    ```python
    # In-memory activity database
@@ -176,34 +176,34 @@ In new project developments, it's often helpful to have some realistic looking f
 
    </details>
 
-1. You can now go to your website and verify that the new activities are visible.
+1. ウェブサイトで新しい活動が表示されていることを確認できます。
 
-### :keyboard: Activity: Use Copilot to describe our work 💬
+### :keyboard: アクティビティ: Copilotに作業内容を説明させる 💬
 
-Nice work fixing that bug and expanding the example activities! Now let's get our work committed and pushed to GitHub, again with the help of Copilot!
+バグを修正してサンプル活動を追加するすばらしい作業ができました！今度は、再びCopilotの助けを借りて作業をコミットしてGitHubにプッシュしましょう。
 
-1. In the left sidebar, select the `Source Control` tab.
+1. 左サイドバーで`ソース管理`タブを選択します。
 
-   > 💡 **Tip:** Opening a file from the source control area will show the differences to the original rather than simply opening it.
+   > 💡 **ヒント:** ソース管理エリアからファイルを開くと、単純にファイルを開くのではなく、オリジナルとの差分が表示されます。
 
-1. Find the `app.py` file and press the `+` sign to collect your changes together in the staging area.
+1. `app.py`ファイルを見つけて`+`記号を押し、変更をステージングエリアにまとめます。
 
    ![image](../images/staging-changes-icon.png)
 
-1. Above the list of staged changes, find the **Message** text box, but **don't enter anything** for now.
-   - Typically, you would write a short description of the changes here, but now we have Copilot to help out!
+1. ステージングされた変更のリストの上にある**メッセージ**テキストボックスを見つけますが、今は**何も入力しないで**ください。
+   - 通常はここに変更の短い説明を書きますが、今はCopilotに手伝ってもらいます！
 
-1. To the right of the **Message** text box, find and click the **Generate Commit Message** button (sparkles icon).
+1. **メッセージ**テキストボックスの右側にある**コミットメッセージを生成**ボタン（スパークルアイコン）を見つけてクリックします。
 
-1. Press the **Commit** button and **Sync Changes** button to push your changes to GitHub.
+1. **コミット**ボタンと**変更を同期**ボタンを押して変更をGitHubにプッシュします。
 
-1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. Monaがあなたの作業を確認し、フィードバックを提供して次のレッスンを共有するまでしばらく待ちます。
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>うまくいかない場合は？ 🤷</summary><br/>
 
-If you don't get feedback, here are some things to check:
+フィードバックが得られない場合は、以下の点を確認してください：
 
-- Make sure your pushed the `src/app.py` file changes to the branch `accelerate-with-copilot`.
+- `src/app.py`ファイルの変更がブランチ`accelerate-with-copilot`にプッシュされていることを確認してください。
 
 </details>

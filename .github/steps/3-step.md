@@ -1,58 +1,58 @@
-## Step 3: Engage Hyperdrive - Copilot Agent Mode 🚀
+## ステップ3: 全速前進 - Copilot Agentモード 🚀
 
-### 📖 Theory: What is Copilot Agent Mode?
+### 📖 理論: Copilot Agentモードとは？
 
-Copilot [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is the next evolution in AI-assisted coding. Acting as an autonomous peer programmer, it performs multi-step coding tasks at your command.
+Copilotの[Agentモード](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)は、AIを活用したコーディングの次の進化です。自律的なピアプログラマーとして動作し、あなたの指示に従って複数ステップのコーディングタスクを実行します。
 
-Copilot Agent Mode responds to compile and lint errors, monitors terminal and test output, and auto-corrects in a loop until the task is completed.
+Copilot Agentモードは、コンパイルエラーやリントエラーに対応し、ターミナルやテストの出力を監視して、タスクが完了するまでループ内で自動修正します。
 
-#### Agent Mode (at a glance)
+#### Agentモード（概要）
 
-| Aspect | 👩‍🚀 Agent Mode |
+| 側面 | 👩‍🚀 Agentモード |
 | --- | --- |
-| Autonomy and planning | Breaks down high-level requests into multi-step work and iterates until the task is complete. |
-| Context gathering | Uses your current context and can discover additional relevant files when needed. |
-| Tool use | Selects and invokes tools automatically; you can also direct tools with mentions like `#codebase`. |
-| Approval and safety gates | Sensitive actions can require approval before execution, helping you stay in control. |
+| 自律性と計画 | 高レベルのリクエストを複数ステップの作業に分解し、タスクが完了するまで繰り返します。 |
+| コンテキスト収集 | 現在のコンテキストを使用し、必要に応じて関連するファイルを追加で探すことができます。 |
+| ツール使用 | ツールを自動的に選択して呼び出します。`#codebase`のようなメンションでツールを指示することもできます。 |
+| 承認とセーフティゲート | 機密性の高いアクションは実行前に承認が必要な場合があり、制御を維持できます。 |
 
-#### 🧰 Agent Mode Tools
+#### 🧰 Agentモードのツール
 
-Agent mode uses tools to accomplish specialized tasks while processing a user request. Examples of such tasks are:
+Agentモードは、ユーザーのリクエストを処理しながら特定のタスクを実行するためにツールを使用します。そのようなタスクの例としては：
 
-- Finding relevant files to complete your prompt
-- Fetching contents of a webpage
-- Running tests or terminal commands
+- プロンプトを完成させるために関連ファイルを見つける
+- ウェブページのコンテンツを取得する
+- テストまたはターミナルコマンドを実行する
 
 > [!TIP]
-> While VS Code provides many built‑in tools, you can also provide Agent Mode more domain‑specific powers through **MCP tools**.
+> VS Codeは多くの組み込みツールを提供していますが、**MCPツール**を通じてAgentモードにさらなるドメイン固有の能力を提供することもできます。
 >
-> Read more on [MCP servers](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) and [GitHub MCP Server](https://github.com/github/github-mcp-server)
+> [MCPサーバー](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)と[GitHub MCPサーバー](https://github.com/github/github-mcp-server)について詳しく読む
 
-Now, let's give **Agent Mode** a try! 👩‍🚀
+では、**Agentモード**を試してみましょう！ 👩‍🚀
 
-### :keyboard: Activity: Use Copilot to add a new feature! :rocket:
+### :keyboard: アクティビティ: Copilotを使って新機能を追加する！ :rocket:
 
-Our website lists activities, but it's keeping the guest list secret 🤫 
+ウェブサイトでは活動が一覧表示されていますが、参加者リストは秘密にされています 🤫
 
-Let's use Copilot to change the website to display signed up students under each activity!
+Copilotを使って、各活動の下に登録済み学生を表示するようウェブサイトを変更しましょう！
 
-1. At the bottom of Copilot Chat window, use the dropdown to switch to **Agent** mode.
+1. Copilot Chatウィンドウの下部でドロップダウンを使って**Agent**モードに切り替えます。
 
    <img width="350" alt="image" src="../images/agent-mode-dropdown.png" />
 
-1. Open the files related to our webpage then drag each editor window (or file) to the chat panel, informing Copilot to use them as context.
+1. ウェブページに関連するファイルを開き、各エディターウィンドウ（またはファイル）をチャットパネルにドラッグして、Copilotがそれらをコンテキストとして使用するよう指示します。
 
    - `src/static/app.js`
    - `src/static/index.html`
    - `src/static/styles.css`
 
-   > 🪧 **Note:** Adding files as context is optional. If you skip this, Copilot Agent Mode can still use tools like `#codebase` to search for relevant files from your prompt. Adding specific files helps point Copilot in the right direction, which is especially useful in larger codebases.
+   > 🪧 **注意:** ファイルをコンテキストとして追加することはオプションです。これを省略しても、Copilot Agentモードは`#codebase`のようなツールを使ってプロンプトから関連ファイルを検索できます。特定のファイルを追加することで、Copilotを正しい方向に導きます。これは大規模なコードベースで特に役立ちます。
 
-   <img width="400" alt="image showing files added to context" src="../images/files-added-to-context.png" />
+   <img width="400" alt="コンテキストに追加されたファイルを示す画像" src="../images/files-added-to-context.png" />
 
-   > 💡 **Tip:** You can also use the **Add Context...** button to provide other sources of context items, like a GitHub issue or the results of a terminal window.
+   > 💡 **ヒント:** **Add Context...**ボタンを使って、GitHubのIssueやターミナルウィンドウの結果など、他のコンテキストアイテムのソースを提供することもできます。
 
-1. Ask Copilot to update our project to display the current participants of activities. Wait a moment for the edit suggestions to arrive and be applied.
+1. Copilotに活動の現在の参加者を表示するようプロジェクトを更新するよう頼みます。編集の提案が届いて適用されるまでしばらく待ちます。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -62,50 +62,50 @@ Let's use Copilot to change the website to display signed up students under each
    > Remember to make it pretty!
    > ```
 
-   After Copilot finishes work, you are in control of what changes get to stay. 
+   Copilotが作業を終えたら、どの変更を残すかはあなたが決めます。
 
-   Using the **Keep** buttons shown below, you can accept/discard all changes or review and decide change by change. This can be done either from the chat panel view or while inspecting each edited file.
+   以下に示す**Keep**ボタンを使って、すべての変更を承認/破棄するか、変更を一つずつ確認して決定することができます。これはチャットパネルビューからでも、各編集されたファイルを検査しながらでも行えます。
 
-      <img width="900" alt="buttons to keep or discard changes" src="../images/review-changes-buttons.png" />
+      <img width="900" alt="変更を保持または破棄するボタン" src="../images/review-changes-buttons.png" />
 
 
-1. Before we simply accept the changes, please check our website again and verify everything is updated as expected. 
+1. 単純に変更を承認する前に、ウェブサイトを再確認して、すべてが期待どおりに更新されていることを確認してください。
    
-   Here is an example of an updated activity card. You may need to restart the app or refresh the page.
+   更新された活動カードの例を示します。アプリを再起動するかページを更新する必要があるかもしれません。
 
-   <img width="350" alt="Activity card with participant info" src="../images/activity-card-with-participants.png" />
+   <img width="350" alt="参加者情報が表示された活動カード" src="../images/activity-card-with-participants.png" />
 
-   > 🪧 **Note:** Your activity card may look different. Copilot won't always produce the same results.
+   > 🪧 **注意:** あなたの活動カードは異なって見えるかもしれません。Copilotは常に同じ結果を生成するわけではありません。
 
    <details>
-   <summary>Need help? 🤷</summary><br/>
-   If the website is not loading, here are some things to check.
+   <summary>困ったときは？ 🤷</summary><br/>
+   ウェブサイトが読み込まれない場合は、以下の点を確認してください。
 
-   - Restart the VS Code Debugger to make sure the latest version of the website is served.
-   - If you forgot the url, or closed the window, please review step 1.
-   - Try hard refreshing the webpage or opening in a private window so it downloads a fresh copy.
+   - VS Codeデバッガーを再起動して、最新バージョンのウェブサイトが提供されていることを確認してください。
+   - URLを忘れたか、ウィンドウを閉じた場合は、ステップ1を確認してください。
+   - ウェブページをハード更新するか、プライベートウィンドウで開いて新しいコピーをダウンロードしてください。
 
    </details>
 
-1. Now that we have confirmed our changes are good, use the panel to cycle through each suggested edit and press **Keep** to apply the change.
+1. 変更が良いことを確認したら、パネルを使って各編集提案を順番に確認し、**Keep**を押して変更を適用します。
 
-   > 💡 **Tip:** You can accept the changes directly, modify them, or provide additional instruction to refine them using the chat interface.
+   > 💡 **ヒント:** 変更を直接承認したり、修正したり、チャットインターフェースを使って追加の指示を提供して結果を精緻化することができます。
 
-### :keyboard: Activity: Use Agent mode to add functional "unregister" buttons
+### :keyboard: アクティビティ: Agentモードを使って機能する「登録解除」ボタンを追加する
 
-Let's experiment with some more open-ended requests that will add more functionality to our web application.
+ウェブアプリケーションに機能を追加するオープンエンドなリクエストでさらに実験してみましょう。
 
-If you don't get the desired results, you can try other models or provide follow-up feedback to refine the results.
+望む結果が得られない場合は、他のモデルを試したり、結果を精緻化するためのフォローアップフィードバックを提供したりしてください。
 
-1. Make sure your Copilot is still in **Agent** mode.
+1. Copilotがまだ**Agent**モードであることを確認します。
 
-   <img width="250" alt="agent mode" src="../images/agent-mode-dropdown.png" />
+   <img width="250" alt="Agentモード" src="../images/agent-mode-dropdown.png" />
 
-1. Click on the **Tools** icon and explore all Tools currently available to Copilot Agent Mode.
+1. **ツール**アイコンをクリックして、Copilot Agentモードで現在利用可能なすべてのツールを探索します。
 
-   <img width="250"  alt="tools icon" src="../images/tools-icon.png" />
+   <img width="250"  alt="ツールアイコン" src="../images/tools-icon.png" />
 
-1. Time for our test! Let's ask Copilot to add functionality for removing participants.
+1. テストをする時です！Copilotに参加者を削除する機能を追加するよう頼みます。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -114,18 +114,18 @@ If you don't get the desired results, you can try other models or provide follow
    > When clicked, it will unregister that participant from the activity.
    > ```
 
-   The `#codebase` tool is used by Copilot to find relevant files, code chunks that are relevant to the task at hand.
+   `#codebase`ツールはCopilotが手元のタスクに関連する関連ファイルやコードチャンクを見つけるために使用されます。
 
-   > 🪧 **Note:** In this lab we explicitly include the `#codebase` tool to get the most repeatable results.
-   > Feel free to try the prompt **without** `#codebase` and observe whether Agent Mode decides to gather broader project context on its own.
+   > 🪧 **注意:** このラボでは最も再現性の高い結果を得るために、明示的に`#codebase`ツールを含めています。
+   > `#codebase`**なし**でプロンプトを試して、Agentモードがプロジェクト全体のコンテキストを収集するかどうかを観察してみてください。
 
-1. When Copilot is finished, inspect the code changes and the results on the website. If you like the results, press the **Keep** button. If not, try providing Copilot some feedback to refine the results.
+1. Copilotが終わったら、コードの変更とウェブサイト上の結果を確認します。結果が気に入ったら、**Keep**ボタンを押します。気に入らない場合は、Copilotにフィードバックを提供して結果を精緻化してください。
 
-   > 🪧 **Note:** If you don't see updates on the website, you may need to restart the debugger
+   > 🪧 **注意:** ウェブサイトに更新が表示されない場合は、デバッガーを再起動する必要があるかもしれません。
 
-1. Ask Copilot to fix a registration bug.
+1. Copilotに登録バグを修正するよう頼みます。
 
-   > 💡 **Tip:** We recommend testing the registration flow yourself so you can clearly see the before/after changes behavior.
+   > 💡 **ヒント:** 変更前後の動作を明確に確認できるよう、自分で登録フローをテストすることを推奨します。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -134,10 +134,10 @@ If you don't get the desired results, you can try other models or provide follow
    > When a participant is registered, the page must be refreshed to see the change on the activity.
    > ```
 
-1. When Copilot is finished, inspect the results and validate the registration flow on the website.
+1. Copilotが終わったら、ウェブサイト上の結果を確認して登録フローを検証します。
 
-   If you like the results, press the **Keep** button. If not, try providing Copilot some feedback.
+   結果が気に入ったら、**Keep**ボタンを押します。気に入らない場合は、Copilotにフィードバックを提供してください。
 
-1. **Commit** and **push** all your changes to the `accelerate-with-copilot` branch.
+1. すべての変更を`accelerate-with-copilot`ブランチに**コミット**して**プッシュ**します。
 
-1. Wait for Mona to check your work and share the next step.
+1. Monaがあなたの作業を確認して次のステップを共有するのを待ちます。

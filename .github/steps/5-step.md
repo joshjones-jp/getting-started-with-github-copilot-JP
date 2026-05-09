@@ -1,42 +1,42 @@
-## Step 5: Using GitHub Copilot within a pull request
+## ステップ5: pull request内でGitHub Copilotを使う
 
-Congratulations! You are finished with coding for this exercise (and VS Code). Now it's time to merge our work. :tada: To wrap up, let's learn about two limited-access Copilot features that can speed up our pull requests!
+おめでとうございます！このエクササイズのコーディング（とVS Code）が完了しました。今度は作業をマージする時です。 :tada: 締めくくりとして、pull requestを効率化できる2つの限定アクセスCopilot機能について学びましょう！
 
-### 📖 Theory: GitHub Copilot for pull requests
+### 📖 理論: pull requestのためのGitHub Copilot
 
-#### Copilot pull request summaries
+#### Copilot pull requestサマリー
 
-Typically, you would review your notes and commit messages then summarize them for your pull request description. This may take some time, especially if commit messages are inconsistent or code is not documented well. Fortunately, Copilot can consider all changes in the pull request and provide the important highlights, and with references too!
+通常、ノートとコミットメッセージを確認してpull requestの説明としてまとめます。これには時間がかかることがあります。特にコミットメッセージが一貫していなかったり、コードが十分にドキュメント化されていない場合には。幸いなことに、Copilotはpull requestのすべての変更を考慮して重要なハイライトを提供できます。しかも参照付きで！
 
-#### Copilot code review
+#### Copilotコードレビュー
 
-More eyes on our work is always useful so let's ask Copilot to do a first pass before we do a normal peer review process. Copilot is great at catching common mistakes that are fixed by simple adjustments, but please remember to use it responsibly.
+作業に多くの目が入るのは常に役立つので、通常のピアレビュープロセスを行う前にCopilotに最初のパスを依頼しましょう。Copilotは簡単な調整で修正できる一般的な間違いを見つけるのが得意ですが、責任を持って使用することを忘れないでください。
 
 > [!NOTE]
-> These features are only available on paid plans of **GitHub Copilot**. [[docs]](https://docs.github.com/en/copilot/get-started/plans)
+> これらの機能は**GitHub Copilot**の有料プランでのみ利用可能です。[[docs]](https://docs.github.com/en/copilot/get-started/plans)
 
-### :keyboard: Activity: Summarize and review a PR with Copilot
+### :keyboard: アクティビティ: CopilotでPRを要約してレビューする
 
-Both **Copilot pull request summaries** and **Copilot code review** have limited access, so this activity is mostly optional. If you don't have access, skip the optional steps of this activity.
+**Copilot pull requestサマリー**と**Copilotコードレビュー**はどちらも限定アクセスなので、このアクティビティはほぼオプションです。アクセスがない場合は、このアクティビティのオプションステップをスキップしてください。
 
-1. In a web browser, open another tab and navigate to your exercise repository.
+1. ウェブブラウザで別のタブを開き、エクササイズリポジトリに移動します。
 
-1. You might notice a **notification banner** suggesting to create a new pull request. Click that or use the **Pull Requests** tab at the top to **create a new pull request**. Please use the following details:
+1. 新しいpull requestを作成することを提案する**通知バナー**が表示されるかもしれません。それをクリックするか、上部の**Pull Requests**タブを使って**新しいpull requestを作成**します。以下の詳細を使用してください：
 
    - **base:** `main`
    - **compare:** `accelerate-with-copilot`
    - **title:** `Improve student activity registration system`
 
-1. (Optional) In the PR description toolbar click the **Copilot** icon and **Summary** action. After a moment, Copilot will add a description based on your changes. :memo:
+1. （オプション）PRの説明ツールバーで**Copilot**アイコンと**Summary**アクションをクリックします。しばらくすると、Copilotがあなたの変更に基づいた説明を追加します。 :memo:
 
-   <img alt="Copilot summarize button" width="450px" src="../images/copilot-summarize-button.png">
+   <img alt="Copilot要約ボタン" width="450px" src="../images/copilot-summarize-button.png">
 
-1. (Optional) In the right side information panel at the top, locate the **Reviewers** section and click the **Request** button next to a **Copilot icon**. Wait a moment for Copilot to add a review comment to your pull request!
+1. （オプション）右側の情報パネル上部にある**レビュアー**セクションを見つけ、**Copilotアイコン**の隣にある**リクエスト**ボタンをクリックします。Copilotがあなたのpull requestにレビューコメントを追加するまでしばらく待ちます！
 
-   <img alt="Copilot review button" width="300px" src="../images/copilot-review-button.png">
+   <img alt="Copilotレビューボタン" width="300px" src="../images/copilot-review-button.png">
 
-   > 💡 **Tip:** Notice a log entry that Copilot was requested for a review.
+   > 💡 **ヒント:** Copilotがレビューのためにリクエストされたログエントリに注目してください。
 
-1. At the bottom, press the **Merge pull request** button. Nice work! You are all done! :tada:
+1. 下部の**pull requestをマージ**ボタンを押します。よくできました！すべて完了です！ :tada:
 
-1. Wait a moment for Mona to check your work, provide feedback, and post a final review of this exercise!
+1. Monaがあなたの作業を確認し、フィードバックを提供して、このエクササイズの最終レビューを投稿するまでしばらく待ちます！
